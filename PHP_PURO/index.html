@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende PHP para Laravel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        
+        .header {
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .course-info {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .exercises-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .exercise-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .exercise-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .exercise-number {
+            background: #667eea;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .exercise-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .exercise-description {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .exercise-topics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .topic-tag {
+            background: #e7f3ff;
+            color: #0066cc;
+            padding: 3px 8px;
+            border-radius: 15px;
+            font-size: 0.8em;
+        }
+        
+        .exercise-link {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        
+        .exercise-link:hover {
+            background: #218838;
+        }
+        
+        .progress-section {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #28a745, #20c997);
+            width: 100%;
+            transition: width 0.3s ease;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🚀 Aprende PHP para Laravel</h1>
+        <p>Domina los fundamentos de PHP antes de adentrarte en Laravel</p>
+    </div>
+    
+    <div class="course-info">
+        <h2>📋 Información del Curso</h2>
+        <p><strong>Objetivo:</strong> Aprender los conceptos fundamentales de PHP necesarios para trabajar efectivamente con Laravel.</p>
+        <p><strong>Prerrequisitos:</strong> Conocimientos básicos de programación y desarrollo web.</p>
+        <p><strong>Duración estimada:</strong> 8-12 horas de estudio</p>
+        <p><strong>Metodología:</strong> Ejercicios prácticos con ejemplos ejecutables</p>
+    </div>
+    
+    <div class="progress-section">
+        <h3>📊 Progreso del Curso</h3>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+        <p style="text-align: center; margin-top: 10px;">8 de 8 ejercicios completados (100%)</p>
+    </div>
+    
+    <div class="exercises-grid">
+        <div class="exercise-card">
+            <div class="exercise-number">1</div>
+            <div class="exercise-title">Variables y Tipos de Datos</div>
+            <div class="exercise-description">
+                Aprende a declarar variables, trabajar con diferentes tipos de datos y realizar conversiones.
+            </div>
+            <div class="exercise-topics">
+                <span class="topic-tag">Variables</span>
+                <span class="topic-tag">String</span>
+                <span class="topic-tag">Integer</span>
+                <span class="topic-tag">Boolean</span>
+                <span class="topic-tag">Arrays</span>
+            </div>
+            <a href="Variables_Operaciones_Basicas/01_variables_tipos.php" class="exercise-link">Comenzar Ejercicio</a>
+        </div>
+        
+        <div class="exercise-card">
+            <div class="exercise-number">2</div>
+            <div class="exercise-title">Operadores Básicos</div>
+            <div class="exercise-description">
+                Domina los operadores aritméticos, de comparación, lógicos y de asignación en PHP.
+            </div>
+            <div class="exercise-topics">
+                <span class="topic-tag">Aritméticos</span>
+                <span class="topic-tag">Comparación</span>
+                <span class="topic-tag">Lógicos</span>
+                <span class="topic-tag">Asignación</span>
+                <span class="topic-tag">Ternario</span>
+            </div>
+            <a href="Variables_Operaciones_Basicas/02_operadores.php" class="exercise-link">Comenzar Ejercicio</a>
+        </div>
+        
+        <div class="exercise-card">
+            <div class="exercise-number">3</div>
+            <div class="exercise-title">Estructuras de Control</div>
+            <div class="exercise-description">
+                Controla el flujo de tu programa con condicionales, bucles y estructuras de decisión.
+            </div>
+            <div class="exercise-topics">
+                <span class="topic-tag">if/else</span>
+                <span class="topic-tag">switch</span>
+                <span class="topic-tag">for</span>
+                <span class="topic-tag">while</span>
+                <span class="topic-tag">foreach</span>
+            </div>
+            <a href="Variables_Operaciones_Basicas/03_estructuras_control.php" class="exercise-link">Comenzar Ejercicio</a>
+        </div>
+        
+        <div class="exercise-card">
+            <div class="exercise-number">4</div>
+            <div class="exercise-title">Funciones</div>
+            <div class="exercise-description">
+                Organiza tu código creando funciones reutilizables, con parámetros y valores de retorno.
+            </div>
+            <div class="exercise-topics">
+                <span class="topic-tag">Declaración</span>
+                <span class="topic-tag">Parámetros</span>
+                <span class="topic-tag">Return</span>
+                <span class="topic-tag">Scope</span>
+                <span class="topic-tag">Closures</span>
+            </div>
+            <a href="Funciones/04_funciones.php" class="exercise-link">Comenzar Ejercicio</a>
+        </div>
+        
+        <div class="exercise-card">
+            <div class="exercise-number">5</div>
+            <div class="exercise-title">Arrays y Manipulación</div>
+            <div class="exercise-description">
+                Trabaja con arrays indexados, asociativos y multidimensionales. Aprende las funciones más útiles.
+            </div>
+            <div class="exercise-topics">
+                <span class="topic-tag">Indexados</span>
+                <span class="topic-tag">Asociativos</span>
+                <span class="topic-tag">Multidimensionales</span>
+                <span class="topic-tag">Funciones</span>
+                <span class="topic-tag">JSON</span>
+            </div>
+            <a href="Arrays/05_arrays.php" class="exercise-link">Comenzar Ejercicio</a>
+        </div>
+        
+        <div class="exercise-card">
+            <div class="exercise-number">6</div>
+            <div class="exercise-title">Programación Orientada a Objetos</div>
+            <div class="exercise-description">
+                Domina los conceptos de POO: clases, objetos, herencia, interfaces y clases abstractas.
+            </div>
+            <div class="exercise-topics">
+                <span class="topic-tag">Clases</span>
+                <span class="topic-tag">Objetos</span>
+                <span class="topic-tag">Herencia</span>
+                <span class="topic-tag">Interfaces</span>
+                <span class="topic-tag">Abstract</span>
+            </div>
+            <a href="POO/06_programacion_orientada_objetos.php" class="exercise-link">Comenzar Ejercicio</a>
+        </div>
+        
+        <div class="exercise-card">
+            <div class="exercise-number">7</div>
+            <div class="exercise-title">Namespaces e Importación</div>
+            <div class="exercise-description">
+                Organiza tu código con namespaces, aprende sobre autoloading y el estándar PSR-4.
+            </div>
+            <div class="exercise-topics">
+                <span class="topic-tag">Namespaces</span>
+                <span class="topic-tag">Use</span>
+                <span class="topic-tag">Autoload</span>
+                <span class="topic-tag">PSR-4</span>
+                <span class="topic-tag">Composer</span>
+            </div>
+            <a href="Namespaces_Importacion/07_namespaces_importacion.php" class="exercise-link">Comenzar Ejercicio</a>
+        </div>
+        
+        <div class="exercise-card">
+            <div class="exercise-number">8</div>
+            <div class="exercise-title">Manejo de Errores</div>
+            <div class="exercise-description">
+                Aprende a manejar errores y excepciones de forma profesional, con logging y debugging.
+            </div>
+            <div class="exercise-topics">
+                <span class="topic-tag">try/catch</span>
+                <span class="topic-tag">Exceptions</span>
+                <span class="topic-tag">Finally</span>
+                <span class="topic-tag">Logging</span>
+                <span class="topic-tag">Debugging</span>
+            </div>
+            <a href="Manejo_Errores/08_manejo_errores.php" class="exercise-link">Comenzar Ejercicio</a>
+        </div>
+    </div>
+    
+    <div class="course-info">
+        <h2>🎯 Siguientes Pasos</h2>
+        <p>Una vez que hayas completado todos los ejercicios, estarás listo para:</p>
+        <ul>
+            <li>Comenzar con Laravel desde cero</li>
+            <li>Entender la arquitectura MVC de Laravel</li>
+            <li>Trabajar con Eloquent ORM</li>
+            <li>Crear APIs RESTful</li>
+            <li>Implementar autenticación y autorización</li>
+        </ul>
+        
+        <h3>📚 Recursos Adicionales</h3>
+        <ul>
+            <li><a href="https://www.php.net/manual/es/" target="_blank">Documentación oficial de PHP</a></li>
+            <li><a href="https://laravel.com/docs" target="_blank">Documentación de Laravel</a></li>
+            <li><a href="https://getcomposer.org/" target="_blank">Composer - Manejador de dependencias</a></li>
+            <li><a href="https://www.php-fig.org/psr/" target="_blank">PSR Standards</a></li>
+        </ul>
+    </div>
+    
+    <div class="footer">
+        <p>💡 <strong>Tip:</strong> Practica cada ejercicio hasta que te sientas cómodo con los conceptos.</p>
+        <p>¡Buena suerte en tu camino de aprendizaje con PHP y Laravel! 🚀</p>
+    </div>
+</body>
+</html>
